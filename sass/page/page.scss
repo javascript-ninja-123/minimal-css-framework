@@ -1,0 +1,128 @@
+
+
+
+
+
+.header{
+  text-align: center;
+  padding:2rem 0;
+  background-color:$color-navy;
+  color:$default-font-color;
+  @include default-animation(moveToBottom);
+  @include shadow1(box);
+  position: fixed;
+  top:0;
+  width:100vw;
+  z-index:100;
+}
+
+
+.main{
+  display:flex;
+  flex-direction: row;
+
+  @include respond(tab-port){
+    &__left-bar{
+      display: none;
+    }
+  }
+
+  & >  * {
+    height:100vh;
+    padding:0 2rem;
+  }
+  &__left-bar{
+    flex:2;
+  }
+  &__right-content{
+    flex:8;
+    overflow-y: scroll;
+    background:rgba($color-grey,.3);
+
+    scroll-container{
+      height:100%;
+      display: block;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+      display: none;  // Safari and Chrome
+      }
+    }
+  }
+
+  &__div{
+      &:first-child{
+        padding-top:8rem;
+      }
+      padding:3rem 0;
+  }
+
+  &__grid{
+     &--text{
+       font-size:2rem;
+       padding-bottom: 2rem;
+     }
+     [class^='col-']{
+       text-align: center;
+       border-radius: 5px;
+       color:white;
+       font-size: $default-font-size;
+       background-color:$color-olive;
+       padding:1rem 0;
+     }
+  }
+
+
+  &__animation{
+    &--text{
+      font-size:2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__breakpoint{
+    &--text{
+      font-size:2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+
+  &__list{
+    list-style: none;
+    padding:0;
+    margin:0;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item{
+    padding:2rem 0;
+    &:not(:last-child){
+      padding-bottom:1rem;
+    }
+  }
+
+  &__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:$default-font-size;
+  }
+
+  .code-snippet{
+    @include respond(tab-port){
+      display: none;
+    }
+    border:1px solid $color-black;
+
+    &__code{
+      font-size:1.5rem;
+    }
+  }
+
+
+
+}

@@ -1,0 +1,30 @@
+
+
+.profile{
+  position:relative;
+  display: inline-block;
+  &__img{
+    width:15rem;
+  }
+
+  &__caption{
+    font-size:$default-font-size;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,120%);
+    opacity:0;
+    @include default-transition;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption{
+    opacity:1;
+    transform:translate(-50%,-50%);
+  }
+
+  &:hover &__img{
+    filter:blur(3px);
+  }
+}

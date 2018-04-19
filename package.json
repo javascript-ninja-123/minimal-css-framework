@@ -1,0 +1,17 @@
+{
+  "name": "advanced-css-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server",
+    "build": "node-sass sass/main.scss css/style.css -w",
+    "minify":"uglifycss css/style.css > css/style.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

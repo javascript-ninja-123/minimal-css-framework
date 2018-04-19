@@ -1,0 +1,49 @@
+
+///shadow mixin
+@mixin shadow1($text){
+  @if $text == box{
+    box-shadow:0 1rem 2rem rgba($color-black,.5);
+  }
+  @else{
+    text-shadow:0 1rem 2rem rgba($color-black,.5);
+  }
+}
+
+
+//transtion && animation
+@mixin default-transition{
+  transition:all .5s ease-in;
+}
+@mixin default-animation($animation-name){
+  animation:$animation-name .8s ease-in;
+}
+
+
+//cross browser
+
+@mixin crossBrowser($property,$value){
+  -webkit-#{$property}:$value;
+-moz-#{$property}:$value;
+-ms-#{$property}:$value;
+#{$property}:$value;
+}
+
+
+///breakpoint
+@mixin respond($breakpoint){
+  @if $breakpoint == phone{
+  @media (max-width:600px){@content};
+}
+
+@if $breakpoint == tab-port{
+  @media (max-width:900px){@content};
+}
+
+@if $breakpoint == tab-land{
+  @media (max-width:1200px){@content};
+}
+
+@if $breakpoint == big-desktop{
+  @media (max-width:1800px){@content};
+}
+}

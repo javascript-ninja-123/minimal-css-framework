@@ -1,0 +1,12 @@
+
+.heading{
+
+  &__secondary{
+    font-size:$default-font-size;
+  }
+
+  &--uppercase{
+    text-transform: uppercase;
+  }
+
+}

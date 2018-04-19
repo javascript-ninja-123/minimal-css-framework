@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class='header'>
+      <div class="heading__secondary heading--uppercase">
+        Flexbox and Grid will be added soon!
+      </div>
+    </header>
+    <main class='main'>
+      <section class="main__left-bar">
+        <ul class="main__list">
+          <li class="main__item"><a href="#grid" class="main__link">Grid</a></li>
+          <li class="main__item"><a href="#animation" class="main__link">Animation</a></li>
+          <li class="main__item"><a href="#breakpoint" class="main__link">Breakpoint</a></li>
+          <li class="main__item"><a href="css/style.css" download class='main__link'>Download</a></li>
+          <li class="main__item"><a href="css/style.min.css" download class='main__link'>Download minified</a></li>
+        </ul>
+      </section>
+      <section class="main__right-content">
+          <scroll-container>
+          <div class="main__grid main__div" id='grid'>
+            <h3 class="main__grid--text">Grid</h3>
+            <div class="container-small">
+              <div class="row">
+                <div class="col-1-of-1">Col 1</div>
+              </div>
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        <div class="container-small">
+                          <div class="row">
+                            <div class="col-1-of-1">Col 1</div>
+                          </div>
+                        </div>
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+              <div class="row">
+                <div class="col-1-of-2">Col 2</div>
+                <div class="col-1-of-2">Col 2</div>
+              </div>
+              <!-- this is a code snippet -->
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        <div class="container-small">
+                          <div class="row">
+                            <div class="col-1-of-2">Col 2</div>
+                            <div class="col-1-of-2">Col 2</div>
+                          </div>
+                        </div>
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+              <!-- code snippet ends here -->
+
+              <!-- row starts here -->
+              <div class="row">
+                <div class="col-1-of-3">Col 3</div>
+                <div class="col-1-of-3">Col 3</div>
+                <div class="col-1-of-3">Col 3</div>
+              </div>
+
+              <!-- row ends here -->
+
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        <div class="container-small">
+                          <div class="row">
+                            <div class="col-1-of-3">Col 3</div>
+                            <div class="col-1-of-3">Col 3</div>
+                            <div class="col-1-of-3">Col 3</div>
+                          </div>
+                        </div>
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+
+
+              <div class="row">
+                <div class="col-1-of-3">Col 3</div>
+                <div class="col-2-of-3">Col 3</div>
+              </div>
+
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        <div class="container-small">
+                          <div class="row">
+                            <div class="col-1-of-3">Col 3</div>
+                            <div class="col-2-of-3">Col 3</div>
+                          </div>
+                        </div>
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+
+
+              <div class="row">
+                <div class="col-1-of-4">Col 4</div>
+                <div class="col-1-of-4">Col 4</div>
+                <div class="col-1-of-4">Col 4</div>
+                <div class="col-1-of-4">Col 4</div>
+              </div>
+
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        <div class="container-small">
+                          <div class="row">
+                            <div class="col-1-of-4">Col 4</div>
+                            <div class="col-1-of-4">Col 4</div>
+                            <div class="col-1-of-4">Col 4</div>
+                            <div class="col-1-of-4">Col 4</div>
+                          </div>
+                        </div>
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+
+
+              <div class="row">
+                <div class="col-1-of-4">Col 4</div>
+                <div class="col-1-of-4">Col 4</div>
+                <div class="col-2-of-4">Col 4</div>
+              </div>
+
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        <div class="container-small">
+                          <div class="row">
+                            <div class="col-1-of-4">Col 4</div>
+                            <div class="col-1-of-4">Col 4</div>
+                            <div class="col-2-of-4">Col 4</div>
+                          </div>
+                        </div>
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+
+              <div class="row">
+                <div class="col-1-of-4">Col 4</div>
+                <div class="col-3-of-4">Col 4</div>
+              </div>
+
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        <div class="container-small">
+                          <div class="row">
+                            <div class="col-1-of-4">Col 4</div>
+                            <div class="col-3-of-4">Col 4</div>
+                          </div>
+                        </div>
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- grid system ended -->
+
+          <div class="main__animation main__div" id='animation'>
+              <h3 class="main__animation--text">Animation</h3>
+              <div class="container-small">
+                <div class="row">
+                    <div class="col-1-of-1 text-center">
+                      <a href="#" class='btn btn--olive'>Button</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <figure class="code-snippet">
+                      <pre>
+                        <xmp class="code-snippet__code">
+                          <a href="#" class='btn btn--olive'>Button</a>
+                        </xmp>
+                      </pre>
+                    </figure>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-1-of-1 text-center">
+                      <figure class='profile'>
+                        <img src="https://i1.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?resize=256%2C256&quality=100" alt="image" class='profile__img'>
+                        <figcaption class="profile__caption">Sungmin Yi</figcaption>
+                      </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <figure class="code-snippet">
+                      <pre>
+                        <xmp class="code-snippet__code">
+                          <figure class='profile'>
+                            <img src="/image" alt="image"
+                            class='profile__img'>
+                            <figcaption class="profile__caption">
+                              Sungmin Yi
+                            </figcaption>
+                          </figure>
+                        </xmp>
+                      </pre>
+                    </figure>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-1-of-1">
+                      <div class="card model-center">
+                        <div class="card__side card__front-side">
+                          this is front
+                        </div>
+
+                        <div class="card__side card__back-side">
+                            this is back
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                  <figure class="code-snippet">
+                      <pre>
+                        <xmp class="code-snippet__code">
+                          <div class="card">
+                            <div class="card__side card__front-side">
+                              this is front
+                            </div>
+
+                            <div class="card__side card__back-side">
+                                this is back
+                            </div>
+                          </div>
+                        </xmp>
+                      </pre>
+                    </figure>
+                </div>
+
+
+              </div>
+          </div>
+
+          <div class="main__breakpoint main__div" id='breakpoint'>
+              <h3 class="main__breakpoint--text">Breakpoint</h3>
+              <div class="row">
+                <figure class="code-snippet">
+                    <pre>
+                      <xmp class="code-snippet__code">
+                        //MEIDA QUERY MANAGER
+                        0 - 600px: phone
+                        600- 900px : Tablet portrait
+                        900px -1200px : Tablet landscape
+                        [1200 -1800] is whre our normal styles apply
+                        1800px ++ : Big desktop
+                      </xmp>
+                    </pre>
+                  </figure>
+              </div>
+          </div>
+
+        </scroll-container>
+      </section>
+    </main>
+</body>
+</html>
